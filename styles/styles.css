@@ -121,8 +121,6 @@ body {
     flex-grow: 1;
 }
 
-/*Get free sounds*/
-
 .get-free-sounds {
     padding: 11px;
     text-align: center;
@@ -146,7 +144,7 @@ body {
 .producers-playground {
     display: flex;
     flex-direction: column;
-    padding: 140px 48px 214px;
+    padding: 140px 48px 0;
     background-image: url("../images/main-bg.jpg");
     background-repeat: no-repeat;
 }
@@ -168,6 +166,30 @@ body {
 .producers-playground-button {
     align-self: flex-start;
     padding: 16px 32px;
+    margin-bottom: 144px;
+}
+
+.producers-playground-link {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    color: inherit;
+    text-decoration: none;
+    justify-self: flex-end;
+    align-self: center;
+    padding-bottom: 40px;
+}
+
+.producers-playground-link:after {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    content: "";
+    width: 12px;
+    height: 8px;
+    background-image: url("../images/icons/arrow-down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .sounds, .gear {
