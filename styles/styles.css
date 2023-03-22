@@ -192,6 +192,10 @@ body {
     background-repeat: no-repeat;
 }
 
+.producers-playground-link:hover {
+    opacity: 0.8;
+}
+
 .sounds, .gear {
     display: grid;
     grid-template-columns: 1fr 580px;
