@@ -4,352 +4,404 @@
   <meta charset="UTF-8">
   <title>Splice</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" as="image" href="images/backgrounds/main-bg.jpg">
+  <link rel="preload" as="image" href="images/backgrounds/try-splice-bg.jpg">
 </head>
 <body>
-<header class="page-header">
-  <nav class="header-navigation">
-    <a class="navigation-logo" href="index.html">
-      <img class="logo" src="images/icons/header-logo.svg" alt="Splice logo" width="97" height="30" loading="lazy">
+<header class="header">
+  <nav class="header__navigation navigation">
+    <a class="logo" href="index.html">
+      <img
+        src="images/icons/header-logo.svg"
+        alt="Splice logo"
+        width="97"
+        height="30"
+        loading="lazy"
+      >
     </a>
 
-    <ul class="navigation-list">
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Sounds</a>
+    <ul class="navigation__list">
+      <li class="navigation__item">
+        <a class="navigation__link" href="/">Sounds</a>
       </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Skills</a>
+      <li class="navigation__item">
+        <a class="navigation__link" href="/">Skills</a>
       </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Plugins</a>
+      <li class="navigation__item">
+        <a class="navigation__link" href="/">Plugins</a>
       </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Studio</a>
+      <li class="navigation__item">
+        <a class="navigation__link" href="/">Studio</a>
       </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Community</a>
+      <li class="navigation__item">
+        <a class="navigation__link" href="/">Community</a>
       </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Blog</a>
+      <li class="navigation__item">
+        <a class="navigation__link" href="/">Blog</a>
       </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Pricing</a>
+      <li class="navigation__item">
+        <a class="navigation__link" href="/">Pricing</a>
       </li>
     </ul>
 
-    <ul class="navigation-list navigation-user">
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Log in</a>
+    <ul class="navigation__list navigation-user">
+      <li class="navigation__item">
+        <a class="navigation__link" href="/">Log in</a>
       </li>
-      <li class="navigation-item sign-up">
-        <a class="navigation-link" href="#">Sign up</a>
+      <li class="navigation__item navigation__item--sign-up">
+        <a class="navigation__link" href="/">Sign up</a>
       </li>
     </ul>
   </nav>
 </header>
 
-<main class="main-container">
+<main class="content">
   <h1 class="visually-hidden">Splice</h1>
 
-  <div class="get-free-sounds">
-    <span class="get-free-sounds-text">
+  <div class="temp-notice">
+    <span class="temp-notice__text">
   🤘   Get free Sounds when you start a trial & 4 months off a Sounds+ annual plan.
     </span>
-    <a class="get-free-sounds-link" href="#">Click here</a>
+    <a class="temp-notice__link" href="/">Click here</a>
   </div>
 
-  <section class="producers-playground">
-    <h2 class="producers-playground-title">
-      Step into the
-      <br>
-      producer’s
-      <br>
-      playground
-    </h2>
-    <p class="producers-playground-text">
-      Explore the world’s best sample library and an
-      <br>
-      unmatched marketplace of plugins and DAWs.
-    </p>
-    <a class="button producers-playground-button" href="#">Try free</a>
-    <a class="producers-playground-link" href="#">Learn more</a>
-  </section>
+  <section class="content__section promo">
+    <div class="container">
+      <div class="promo__text-container">
+        <h2 class="promo__title">Step into the producer’s playground</h2>
+        <p class="promo__text">
+          Explore the world’s best sample library and an unmatched marketplace of plugins and DAWs.
+        </p>
+      </div>
 
-  <section class="sounds">
-
-    <div class="section-container">
-      <h2 class="section-title">Sounds</h2>
-      <p class="section-text-large">A catalog so deep, it’s dangerous.</p>
-      <p class="section-text">
-        Expertly created and curated samples in any style
-        <br>
-        imaginable. Start swimming in sound.
-      </p>
-      <a class="button" href="#">Explore Sounds</a>
-    </div>
-
-    <img class="sounds-img" src="images/1.jpg" alt="6 different albums" width="580" height="386" loading="lazy">
-  </section>
-
-  <section class="connected-experience">
-    <img class="section-img" src="images/2.jpg" alt="Workflow" width="580" height="386" loading="lazy">
-
-    <div class="section-container">
-      <h2 class="section-title">Connected Experience</h2>
-      <p class="section-text-large">A workflow that actually flows.</p>
-      <p class="section-text">
-        Preview samples in your track’s key and tempo, drag
-        <br>
-        and drop sounds into your DAW, and organize your favorite
-        <br>
-        samples, MIDI and presets in one place.
-      </p>
-    </div>
-  </section>
-
-  <section class="gear">
-    <div class="section-container">
-      <h2 class="section-title">Gear</h2>
-      <p class="section-text-large">
-        Build a drool-worthy studio,
-        <br>
-        affordably.
-      </p>
-      <p class="section-text">
-        The industry’s top software, all in one place, on payment
-        <br>
-        plans built to work for you.
-      </p>
-
-      <a class="button" href="#">Explore Gear</a>
-    </div>
-
-    <img class="section-img" src="images/3.jpg" alt="Drool-worthy studio" width="580" height="386" loading="lazy">
-  </section>
-
-  <section class="technology">
-    <img class="section-img" src="images/4.jpg" alt="Drool-worthy studio" width="580" height="386" loading="lazy">
-
-    <div class="section-container">
-      <h2 class="section-title">Technology</h2>
-      <p class="section-text-large">Crate dig without the dust.</p>
-      <p class="section-text">
-        Our intelligent search tools help you discover sounds
-        <br>
-        you would normally have to dig to find. Tech breaks the sweat, not
-        <br>
-        you.
-      </p>
-
-      <a class="button" href="#">Discover CoSo</a>
+      <a class="promo__button button" href="/">Try free</a>
+      <a class="promo__link" href="/">Learn more</a>
     </div>
 
   </section>
 
-  <section class="creators">
-    <h2 class="creators-title">What creators are saying about Splice</h2>
-    <ul class="creators-list">
-      <li class="creators-item">
-        <img class="creators-img" src="images/andrew.jpg" alt="Andrew Huang" width="223" height="223" loading="lazy">
-        <blockquote>
-          <p class="creators-item-text">
-            I can always find what I’m looking for on Splice, whether it’s the exact sound I want or just a bit of
-            inspiration.
-          </p>
-        </blockquote>
-        <cite class="creators-item-author">Andrew Huang</cite>
-      </li>
-      <li class="creators-item">
-        <img class="creators-img" src="images/kshmr.jpg" alt="Kshmr" width="223" height="223" loading="lazy">
-        <blockquote>
-          <p class="creators-item-text">
-            Finally a way to buy plugins that works. By paying a little at a time, producers can get legit access to the
-            top VSTs.
-          </p>
-        </blockquote>
-        <cite class="creators-item-author">KSHMR</cite>
-      </li>
-      <li class="creators-item">
-        <img class="creators-img" src="images/kesha.jpg" alt="Kesha Lee" width="223" height="223" loading="lazy">
-        <blockquote>
-          <p class="creators-item-text">
-            It’s been fun to dive into Splice’s creator community and explore tools that support my own creative
-            process.
-          </p>
-        </blockquote>
-        <cite class="creators-item-author">Kesha Lee</cite>
-      </li>
-    </ul>
+  <section class="content__section advantages">
+    <h2 class="visually-hidden">Our advantages</h2>
+
+    <div class="container">
+      <ul class="advantages__list">
+        <li class="advantages__item advantage-card">
+          <div class="advantage-card__body">
+            <h3 class="advantage-card__title">Sounds</h3>
+            <div class="advantage-card__subtitle">A catalog so deep, it’s dangerous.</div>
+            <p class="advantage-card__description">
+              Expertly created and curated samples in any style imaginable. Start swimming in sound.
+            </p>
+            <a class="advantage-card__button button" href="/">Explore Sounds</a>
+          </div>
+          <img
+            class="advantage-card__image"
+            src="images/advantages/1.jpg"
+            alt="6 different albums"
+            width="580"
+            height="386"
+            loading="lazy"
+          >
+        </li>
+
+        <li class="advantages__item advantage-card advantage-card--right">
+          <img
+            class="advantage-card__image"
+            src="images/advantages/2.jpg"
+            alt="Workflow"
+            width="580"
+            height="386"
+            loading="lazy"
+          >
+          <div class="advantage-card__body">
+            <h3 class="advantage-card__title">Connected Experience</h3>
+            <div class="advantage-card__subtitle">A workflow that actually flows.</div>
+            <p class="advantage-card__description">
+              Preview samples in your track’s key and tempo, drag and drop sounds into your DAW, and organize your
+              favorite samples, MIDI and presets in one place.
+            </p>
+          </div>
+        </li>
+
+        <li class="advantages__item advantage-card">
+          <div class="advantage-card__body">
+            <h3 class="advantage-card__title">Gear</h3>
+            <div class="advantage-card__subtitle">Build a drool-worthy studio, affordably.</div>
+            <p class="advantage-card__description">
+              The industry’s top software, all in one place, on payment plans built to work for you.
+            </p>
+            <a class="advantage-card__button button" href="/">Explore Gear</a>
+          </div>
+          <img
+            class="advantage-card__image"
+            src="images/advantages/3.jpg"
+            alt="Drool-worthy studio"
+            width="580"
+            height="386"
+            loading="lazy"
+          >
+        </li>
+
+        <li class="advantages__item advantage-card advantage-card--right">
+          <img
+            class="advantage-card__image"
+            src="images/advantages/4.jpg"
+            alt="Drool-worthy studio"
+            width="580"
+            height="386"
+            loading="lazy"
+          >
+          <div class="advantage-card__body">
+            <h3 class="advantage-card__title">Technology</h3>
+            <div class="advantage-card__subtitle">Crate dig without the dust.</div>
+            <p class="advantage-card__description">
+              Our intelligent search tools help you discover sounds you would normally have to dig to find. Tech
+              breaks the sweat, not you
+            </p>
+            <a class="advantage-card__button button" href="/">Discover CoSo</a>
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
 
-  <section class="try-splice-today">
-    <p class="try-splice-today-text">Try Splice today</p>
-    <a class="button" href="#">Start now</a>
+  <section class="content__section creators">
+    <div class="container">
+      <h2 class="creators__title">What creators are saying about Splice</h2>
+      <ul class="creators__list">
+        <li class="creators__item">
+          <img
+            class="creators__img"
+            src="images/creators/andrew.jpg"
+            alt="Andrew Huang"
+            width="223"
+            height="223"
+            loading="lazy"
+          >
+          <blockquote class="creators__quote quote">
+            <p class="quote__text">
+              I can always find what I’m looking for on Splice, whether it’s the exact sound I want or just a bit of
+              inspiration.
+            </p>
+          </blockquote>
+          <cite class="creators__author">Andrew Huang</cite>
+        </li>
+
+        <li class="creators__item">
+          <img
+            class="creators__img"
+            src="images/creators/kshmr.jpg"
+            alt="Kshmr"
+            width="223"
+            height="223"
+            loading="lazy"
+          >
+          <blockquote class="creators__quote quote">
+            <p class="quote__text">
+              Finally a way to buy plugins that works. By paying a little at a time, producers can get legit access to the
+              top VSTs.
+            </p>
+          </blockquote>
+          <cite class="creators__author">KSHMR</cite>
+        </li>
+
+        <li class="creators__item">
+          <img
+            class="creators__img"
+            src="images/creators/kesha.jpg"
+            alt="Kesha Lee"
+            width="223"
+            height="223"
+            loading="lazy"
+          >
+          <blockquote class="creators-quote quote">
+            <p class="quote__text">
+              It’s been fun to dive into Splice’s creator community and explore tools that support my own creative
+              process.
+            </p>
+          </blockquote>
+          <cite class="creators__author">Kesha Lee</cite>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="content__section start">
+    <p class="start__text">Try Splice today</p>
+    <a class="button" href="/">Start now</a>
   </section>
 </main>
 
-<footer class="page-footer">
-  <div class="footer-lists">
+<footer class="footer">
 
-    <div class="footer-list-container">
-      <h2 class="footer-list-title">Skills</h2>
-      <ul class="footer-list">
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Features</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Catalog</a>
-        </li>
-      </ul>
+  <div class="container">
+    <div class="footer__list-sections list-sections">
+      <div class="list-sections__container">
+        <h2 class="list-sections__title">Skills</h2>
+        <ul class="list-sections__item footer-list">
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Features</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Catalog</a>
+          </li>
+        </ul>
 
-      <h2 class="footer-list-title">Studio</h2>
-      <ul class="footer-list">
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Features</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">About Splice Studio</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">
-            Managing Your Production Library</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Collaborating with Baewatch</a>
-        </li>
-      </ul>
+        <h2 class="list-sections__title">Studio</h2>
+        <ul class="list-sections__item footer-list">
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Features</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">About Splice Studio</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">
+              Managing Your Production Library</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Collaborating with Baewatch</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="list-sections__container">
+        <h2 class="list-sections__title">Community</h2>
+        <ul class="list-sections__item footer-list">
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Ableton Live Projects</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">FL Studio Projects</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Logic Pro X Projects</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Garageband Projects</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Remix Contests</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Tiesto's Secrets</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="list-sections__container">
+        <h2 class="list-sections__title">Sounds</h2>
+        <ul class="list-sections__item footer-list">
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Features</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Catalog</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">How Jauz Uses Sounds</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">deadmau5's Chimaera</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">KSHMR Vol. 2</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="list-sections__container">
+        <h2 class="list-sections__title">Plugins</h2>
+        <ul class="list-sections__item footer-list">
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Top VSTs</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Serum</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Rent to Own</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Free Plugins</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Top Manufacturers</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="list-sections__container">
+        <h2 class="list-sections__title">Beatmaker</h2>
+        <ul class="list-sections__item footer-list">
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Create Your Own Beat</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Wakapella</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Just Blaze</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="list-sections__container">
+        <h2 class="list-sections__title">Blog</h2>
+        <ul class="list-sections__item footer-list">
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Latest Posts</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Using Soundtoys Decapitator</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Mastering 101</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Producing Future Beats</a>
+          </li>
+          <li class="footer-list__item">
+            <a class="footer-list__link" href="/">Belonging @ Splice</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="footer-list-container">
-      <h2 class="footer-list-title">Community</h2>
-      <ul class="footer-list">
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Ableton Live Projects</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">FL Studio Projects</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Logic Pro X Projects</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Garageband Projects</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Remix Contests</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Tiesto's Secrets</a>
-        </li>
-      </ul>
-    </div>
+    <div class="footer__container">
+      <span class="footer__rights">© 2022 Splice.com All Rights Reserved</span>
 
-    <div class="footer-list-container">
-      <h2 class="footer-list-title">Sounds</h2>
-      <ul class="footer-list">
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Features</a>
+      <ul class="footer__navigation-list footer-navigation">
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="/">Terms of Use</a>
         </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Catalog</a>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="/">Privacy Policy</a>
         </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">How Jauz Uses Sounds</a>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="/">Jobs</a>
         </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">deadmau5's Chimaera</a>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="/">Contact</a>
         </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">KSHMR Vol. 2</a>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="/">Help</a>
         </li>
-      </ul>
-    </div>
-
-    <div class="footer-list-container">
-      <h2 class="footer-list-title">Plugins</h2>
-      <ul class="footer-list">
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Top VSTs</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Serum</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Rent to Own</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Free Plugins</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Top Manufacturers</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="footer-list-container">
-      <h2 class="footer-list-title">Beatmaker</h2>
-      <ul class="footer-list">
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Create Your Own Beat</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Wakapella</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Just Blaze</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="footer-list-container">
-      <h2 class="footer-list-title">Blog</h2>
-      <ul class="footer-list">
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Latest Posts</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Using Soundtoys Decapitator</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Mastering 101</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Producing Future Beats</a>
-        </li>
-        <li class="footer-list-item">
-          <a class="footer-list-link" href="#">Belonging @ Splice</a>
+        <li class="footer-navigation__item">
+          <a class="footer-navigation__link" href="/">
+            <img
+              class="footer-navigation__logo"
+              src="images/icons/facebook.svg"
+              alt="Facebook"
+              width="16"
+              height="16"
+              loading="lazy"
+            >
+          </a>
         </li>
       </ul>
     </div>
   </div>
-
-  <div class="footer-container">
-    <span class="footer-rights">© 2022 Splice.com All Rights Reserved</span>
-
-    <ul class="footer-navigation-list">
-      <li class="footer-navigation-item">
-        <a class="footer-navigation-link" href="#">Terms of Use</a>
-      </li>
-      <li class="footer-navigation-item">
-        <a class="footer-navigation-link" href="#">Privacy Policy</a>
-      </li>
-      <li class="footer-navigation-item">
-        <a class="footer-navigation-link" href="#">Jobs</a>
-      </li>
-      <li class="footer-navigation-item">
-        <a class="footer-navigation-link" href="#">Contact</a>
-      </li>
-      <li class="footer-navigation-item">
-        <a class="footer-navigation-link" href="#">Help</a>
-      </li>
-      <li class="footer-navigation-item">
-        <a class="footer-navigation-link" href="#">
-          <img class="footer-navigation-logo" src="images/icons/facebook.svg" alt="Facebook" width="16" height="16"
-               loading="lazy">
-        </a>
-      </li>
-    </ul>
-  </div>
-
 </footer>
 </body>
 </html>
